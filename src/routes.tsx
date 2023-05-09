@@ -3,7 +3,7 @@ import {Home} from "./Pages/Home/Home.tsx";
 import {About} from "./Pages/About/About.tsx";
 import {Menu} from "./components/Menu";
 
-function App() {
+export default function AppRoutes() {
     return (
         <BrowserRouter>
             <Menu />
@@ -16,5 +16,3 @@ function App() {
         </BrowserRouter>
     )
 }
-
-export default App
