@@ -1,6 +1,4 @@
 import styles from './Banner.module.css';
-import circuloColorido from '../../assets/circulo_colorido.png';
-import minhaFoto from '../../assets/minha_foto.png'
 
 export function Banner() {
     return (
@@ -18,13 +16,13 @@ export function Banner() {
             <div className={styles.imagens}>
                 <img
                     className={styles.circuloColorido}
-                    src={circuloColorido}
+                    src='assets/circulo_colorido.png'
                     aria-hidden={true}
                 />
 
                 <img
                     className={styles.minhaFoto}
-                    src={minhaFoto}
+                    src='assets/minha_foto.png'
                     alt="Foto do Antônio Evaldo sorrindo"
                 />
             </div>
