@@ -8,7 +8,7 @@ export function Menu() {
                 <MenuLink to="/">
                     Início
                 </MenuLink>
-                <MenuLink to="/sobremim">
+                <MenuLink to="/about">
                     Sobre Mim
                 </MenuLink>
             </nav>
