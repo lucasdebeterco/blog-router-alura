@@ -12,10 +12,11 @@ export default function AppRoutes() {
 
             <Routes>
                 <Route path='/' element={<DefaultPage />}>
-                    <Route path="/" element={<Home />}/>
-                    <Route path="/about" element={<About />}/>
-                    <Route path="*" element={<div>Página não encontrada</div>}/>
+                    <Route index element={<Home />}/>
+                    <Route path="about" element={<About />}/>
                 </Route>
+
+                <Route path="*" element={<div>Página não encontrada</div>}/>
             </Routes>
 
             <Rodape />
