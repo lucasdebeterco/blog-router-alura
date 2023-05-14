@@ -4,6 +4,8 @@ import {About} from "./Pages/About/About.tsx";
 import {Menu} from "./components/Menu";
 import {Rodape} from "./components/Rodape";
 import {DefaultPage} from "./components/DefaultPage";
+import {Post} from "./components/Post";
+import {NotFound} from "./Pages/NotFound";
 
 export default function AppRoutes() {
     return (
@@ -14,9 +16,10 @@ export default function AppRoutes() {
                 <Route path='/' element={<DefaultPage />}>
                     <Route index element={<Home />}/>
                     <Route path="about" element={<About />}/>
+                    <Route path="posts/:id" element={<Post />}/>
                 </Route>
 
-                <Route path="*" element={<div>Página não encontrada</div>}/>
+                <Route path="*" element={<NotFound />}/>
             </Routes>
 
             <Rodape />
