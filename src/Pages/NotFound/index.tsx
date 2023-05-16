@@ -1,7 +1,10 @@
 import styles from './NotFound.module.css'
 import erro404 from '../../../public/assets/erro_404.png'
+import {BotaoPrincipal} from "../../components/BotaoPrincipal";
+import {useNavigate} from "react-router-dom";
 
 export function NotFound() {
+    const nav = useNavigate()
     return (
         <>
             <div className={styles.conteudoContainer}>
@@ -19,8 +22,8 @@ export function NotFound() {
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
 
-                <div className={styles.botaoContainer}>
-                    <button>Voltar</button>
+                <div className={styles.botaoContainer} onClick={()=> nav(-1)}>
+                    <BotaoPrincipal tamanho='lg'>Voltar</BotaoPrincipal>
                 </div>
 
                 <img
