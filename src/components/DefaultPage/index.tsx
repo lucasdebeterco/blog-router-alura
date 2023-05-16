@@ -1,12 +1,13 @@
 import {Banner} from "../Banner";
 import {Outlet} from "react-router-dom";
 
-export function DefaultPage() {
+export function DefaultPage({children}: any) {
     return (
         <main>
             <Banner />
 
             <Outlet />
+            {children}
         </main>
     )
 }
